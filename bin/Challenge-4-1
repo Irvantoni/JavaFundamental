@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+
+        Scanner baca = new Scanner(System.in);
+        System.out.print("Masukkan jari-jari/radius: ");
+        double radius = baca.nextDouble();
+        double PHI = 3.14;
+        double volume = (4.0/3.0) * PHI * Math.pow(radius, 3);
+
+        System.out.println(volume);
+        baca.close();
+
+        int a = 15;
+        int b = 20;
+
+        System.out.println("Nilai a awal = " + a);
+        System.out.println("Nilai b awal = " + b);
+
+        /* lengkapi code disini*/
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("Nilai a sekarang = " + a);
+        System.out.println("Nilai b sekarang = " + b);
+        System.out.printf("%d - %d", a, b);
+    }
+}
+
