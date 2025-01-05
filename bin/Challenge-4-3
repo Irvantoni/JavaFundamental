@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class LuasVolumeBalok {
+    public static void main(String[] args) {
+
+        Scanner baca = new Scanner(System.in);
+        Integer panjang = baca.nextInt();
+        Integer lebar = baca.nextInt();
+        Integer tinggi = baca.nextInt();
+        
+        Integer luas = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
+        Integer volume = panjang * lebar * tinggi;
+
+        System.out.println(luas);
+        System.out.println(volume);
+        baca.close();
+    }
+}

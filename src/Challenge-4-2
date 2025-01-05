@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+
+        Scanner baca = new Scanner(System.in);
+        double radius = baca.nextDouble();
+        double PHI = 3.14;
+        double volume = PHI * radius * radius;
+
+        System.out.println(volume);
+        baca.close();
+    }
+}
