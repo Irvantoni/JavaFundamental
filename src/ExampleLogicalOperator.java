@@ -1,4 +1,4 @@
-public class LogicalOperatorExample {
+public class ExampleLogicalOperator {
     public static void main(String[] args) {
         boolean a = true;
         boolean b = false;

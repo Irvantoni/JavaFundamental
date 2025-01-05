@@ -1,4 +1,4 @@
-public class variableExample {
+public class ExampleVariable {
 
     static String nama = "Irvantoni Ilham";
 

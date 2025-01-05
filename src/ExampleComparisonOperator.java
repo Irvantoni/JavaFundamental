@@ -1,4 +1,4 @@
-public class ComparisonOperatorExample {
+public class ExampleComparisonOperator {
 
     public static void main(String[] args) {
         int a = 24;

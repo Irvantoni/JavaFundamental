@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LoginInputLogic {
+public class LogicLoginInput {
     public static void main(String[] args) {
 
         Scanner baca = new Scanner(System.in);
