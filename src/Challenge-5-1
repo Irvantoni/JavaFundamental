@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Sandbox {
+    public static void main(String[] args) {
+        Scanner baca = new Scanner(System.in);
+        int adalahGenap = baca.nextInt();
+        baca.close();
+
+        String result = adalahGenap % 2 == 0 ? "Genap" : "Ganjil";
+        System.out.println(result);
+    }
+}
