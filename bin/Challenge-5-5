@@ -1,0 +1,58 @@
+import java.util.*;
+
+public class TugasLagiNa {
+    public static void main(String[] args) {
+        int tanggal;
+        int bulan;
+        int tahun;
+
+        Scanner input = new Scanner(System.in);
+        tanggal = input.nextInt();
+        bulan = input.nextInt();
+        tahun = input.nextInt();
+        input.close();
+
+        switch (bulan) {
+            case 1:
+            System.out.println(tanggal + " Januari " + tahun);
+                break;
+            case 2:
+            System.out.println(tanggal + " Februari " + tahun);
+                break;
+            case 3:
+            System.out.println(tanggal + " Maret " + tahun);
+                break;
+            case 4:
+            System.out.println(tanggal + " April " + tahun);
+                break;
+            case 5:
+            System.out.println(tanggal + " Mei " + tahun);
+                break;
+            case 6:
+            System.out.println(tanggal + " Juni " + tahun);
+                break;
+            case 7:
+            System.out.println(tanggal + " Juli " + tahun);
+                break;
+            case 8:
+            System.out.println(tanggal + " Agustus " + tahun);
+                break;
+            case 9:
+            System.out.println(tanggal + " September " + tahun);
+                break;
+            case 10:
+            System.out.println(tanggal + " Oktober " + tahun);
+                break;
+            case 11:
+            System.out.println(tanggal + " November " + tahun);
+                break;
+            case 12:
+            System.out.println(tanggal + " Desember " + tahun);
+                break;
+        
+            default:
+            System.out.println("Tidak terdaftar");
+                break;
+        }
+    }
+}

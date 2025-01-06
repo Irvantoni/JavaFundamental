@@ -13,13 +13,25 @@ public class LogicLoginInput {
 
         baca.close();
         
+        //with input, conditional if dan else if
         Boolean cekUsername = inputUsername.equalsIgnoreCase("ilham");
         Boolean cekPassword = inputPassword.equals("ilham");
 
         Boolean isLoginSuccess = cekUsername && cekPassword;
+
         if (isLoginSuccess == true) {
             System.out.println("Selamat datang, silahkan masuk ...");
-        } else {
+        } 
+
+        else if (cekUsername == false) {
+            System.out.println("Username Salah!");
+        } 
+
+        else if (cekPassword == false) {
+            System.out.println("Password Salah!");
+        } 
+        
+        else  {
             System.out.println("Username atau Password Salah!");
         }
     }

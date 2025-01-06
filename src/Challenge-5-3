@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Soal {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Integer input = scan.nextInt();
+
+        int waktu = 24;
+
+        if (input < 0 || input > waktu){
+            System.out.println("WAKTU HANYA 24 JAM"); 
+        } 
+        else if (input <= 12 && input >= 8) {
+            System.out.println("JAM BELAJAR");
+        }
+        else if (input <= 17 && input >= 14) {
+            System.out.println("JAM BELAJAR");
+        }
+        else {
+            System.out.println("JAM ISTIRAHAT");
+        }
+        scan.close();
+    }
+}
