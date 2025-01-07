@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Sandbox {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Integer n = scan.nextInt();
+        scan.close();
+
+        int i = 1;
+        boolean naik = true; 
+
+        while (i <= 2 * n -1) {
+            int bintang = 0;
+            if (naik) {
+                bintang = i;
+            } else {
+                bintang = 2 * n - i;
+            }
+
+            for (int j = 0; j < bintang; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+            if (i == n) {
+                naik = false;
+            }
+            i++;
+        }
+    }
+}

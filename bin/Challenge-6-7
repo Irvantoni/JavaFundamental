@@ -6,8 +6,11 @@ public class Sandbox {
         Integer input = scan.nextInt();
         scan.close();
 
+        int hasil = 1;
         for (int i = 1; i <= input; i++) {
+            hasil *= i;
             System.out.println(i);
         }
+        System.out.println(hasil);
     }
 }
