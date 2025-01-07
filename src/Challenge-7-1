@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Integer[] numbers = { 1, 2, 3, 4, 5, 6 };
+        Integer[] anotherNumbers = { 4, 5, 6, 7, 8, 9, 10 };
+
+        /* taruh code disini */
+        for (Integer num1 : numbers) {
+            for (Integer num2 : anotherNumbers) {
+                if (num1.equals(num2)) {
+                    System.out.print(num1 + " ");
+                }
+            }
+        }
+    }
+}

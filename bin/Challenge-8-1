@@ -1,0 +1,10 @@
+public class ExampleFunction {
+    public static void main(String[] args) {
+        System.out.println(multiply(10, 15));
+    }
+
+    static int multiply(int angka1, int angka2) {
+        int hasil = angka1 * angka2;
+        return hasil;
+    }
+}

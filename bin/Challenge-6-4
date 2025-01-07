@@ -2,14 +2,27 @@ import java.util.Scanner;
 
 public class Sandbox {
     public static void main(String[] args) {
-        Scanner baca = new Scanner(System.in);
-        Integer angka = baca.nextInt();
-        baca.close();
+        Scanner scan = new Scanner(System.in);
+        Integer input = scan.nextInt();
+        scan.close();
 
-        if (angka % 2 == 0) {
-            System.out.println("angka genap");
-        } else {
-            System.out.println("angka ganjil");
+        // kasus 1 cari ganjil dibawah input lalu tambahkan,
+        // kasus 2 cari angka genap start dar 1 sampai sebanyak input
+        int ganjil = 0;
+        int genap = 0;
+        
+        for (int i = 1; i <= input; i++) {
+            if (i % 2 != 0 && i < input) {
+                ganjil = ganjil + i;
+                i++;
+            }
         }
+
+        for (int j = 1; j <= input; j++) {
+            genap = genap + (j * 2);
+        }
+
+        System.out.println(ganjil);
+        System.out.println(genap);
     }
 }
